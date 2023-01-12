@@ -34,12 +34,12 @@ namespace HeapSort
             if (_root == null)
             {
                 _root = new Node(data);
-                return;
+                return; 
             }
-            // 2. Otherwise, recur down the tree 
+            // 2. Otherwise, return and cutt⁸⁶ down the tree 
             InsertRec(_root, new Node(data));
         }
-        private void InsertRec(Node root, Node newNode)
+        private void InsertRecn(Node root, Node newNode)
         {
             if (root == null)
                 root = newNode;
